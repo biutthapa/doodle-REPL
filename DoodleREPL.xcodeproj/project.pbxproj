@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D9BB7BC22B767B9A00C4B3FA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BB7BC12B767B9A00C4B3FA /* main.swift */; };
+		D9BB7BCA2B767D3200C4B3FA /* DoodleCore in Frameworks */ = {isa = PBXBuildFile; productRef = D9BB7BC92B767D3200C4B3FA /* DoodleCore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9BB7BCA2B767D3200C4B3FA /* DoodleCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +80,9 @@
 			dependencies = (
 			);
 			name = DoodleREPL;
+			packageProductDependencies = (
+				D9BB7BC92B767D3200C4B3FA /* DoodleCore */,
+			);
 			productName = DoodleREPL;
 			productReference = D9BB7BBE2B767B9A00C4B3FA /* DoodleREPL */;
 			productType = "com.apple.product-type.tool";
@@ -106,6 +111,9 @@
 				Base,
 			);
 			mainGroup = D9BB7BB52B767B9A00C4B3FA;
+			packageReferences = (
+				D9BB7BC82B767D3200C4B3FA /* XCRemoteSwiftPackageReference "Doodle" */,
+			);
 			productRefGroup = D9BB7BBF2B767B9A00C4B3FA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -284,6 +292,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D9BB7BC82B767D3200C4B3FA /* XCRemoteSwiftPackageReference "Doodle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/biutthapa/Doodle";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D9BB7BC92B767D3200C4B3FA /* DoodleCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D9BB7BC82B767D3200C4B3FA /* XCRemoteSwiftPackageReference "Doodle" */;
+			productName = DoodleCore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D9BB7BB62B767B9A00C4B3FA /* Project object */;
 }
